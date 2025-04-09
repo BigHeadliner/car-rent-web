@@ -1,0 +1,254 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Inter-Light";
+  font-weight: 300;
+  font-style: normal;
+  src: local("Inter-Light"), url("../fonts/Inter-Light.woff2") format("font-woff2"), url("../fonts/Inter-Light.woff") format("font-woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Inter-Regular"), url("../fonts/Inter-Regular.woff2") format("font-woff2"), url("../fonts/Inter-Regular.woff") format("font-woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Inter-Medium"), url("../fonts/Inter-Medium.woff2") format("font-woff2"), url("../fonts/Inter-Medium.woff") format("font-woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Inter-SemiBold"), url("../fonts/Inter-SemiBold.woff2") format("font-woff2"), url("../fonts/Inter-SemiBold.woff") format("font-woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Inter-Bold"), url("../fonts/Inter-Bold.woff2") format("font-woff2"), url("../fonts/Inter-Bold.woff") format("font-woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oxygen-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Oxygen-Bold"), url("../fonts/Oxygen-Bold.woff2") format("font-woff2"), url("../fonts/Oxygen-Bold.woff") format("font-woff");
+  font-display: swap;
+}
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.jq-checkbox,
+.jq-radio {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.jq-checkbox input,
+.jq-radio input {
+  position: absolute;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.jq-file {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.jq-file input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  font-size: 100px;
+  line-height: 1em;
+}
+
+.jq-file__name {
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+.jq-selectbox,
+.jq-select-multiple {
+  position: relative;
+  display: inline-block;
+}
+
+.jq-selectbox select,
+.jq-select-multiple select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.jq-selectbox li,
+.jq-select-multiple li {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.jq-selectbox {
+  z-index: 10;
+}
+
+.jq-selectbox__select {
+  position: relative;
+}
+
+.jq-selectbox__select-text {
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+.jq-selectbox__dropdown {
+  position: absolute;
+}
+
+.jq-selectbox__search input {
+  -webkit-appearance: textfield;
+}
+
+.jq-selectbox__search input::-webkit-search-cancel-button,
+.jq-selectbox__search input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.jq-selectbox__dropdown ul {
+  position: relative;
+  overflow: auto;
+  overflow-x: hidden;
+  list-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.jq-select-multiple ul {
+  position: relative;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.jq-number {
+  display: inline-block;
+}
+
+.jq-number__field input {
+  -moz-appearance: textfield;
+  text-align: left; /* для Opera Presto */
+}
+
+.jq-number__field input::-webkit-inner-spin-button,
+.jq-number__field input::-webkit-outer-spin-button {
+  margin: 0; /* в каких-то браузерах присутствует отступ */
+  -webkit-appearance: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.container-big {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid green;
+}
+
+.container-average {
+  max-width: 1494px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid green;
+}

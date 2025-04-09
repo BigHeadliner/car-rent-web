@@ -1,0 +1,21 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.container-big {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid green;
+}
+
+.container-average {
+  max-width: 1494px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid green;
+}
