@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     background-color: #1e1e20;
+    margin-bottom: 64px;
   }
 
   &__logo {
@@ -136,6 +137,37 @@
     position: absolute;
     top: 0;
     left: -31px;
+  }
+}
+
+.breadcrumbs {
+  margin-bottom: 40px;
+  &__menu {
+    display: flex;
+  }
+
+  &__menu-item {
+    position: relative;
+  }
+
+  &__menu-item + .breadcrumbs__menu-item {
+    margin-left: 24px;
+  }
+
+  &__menu-link {
+    color: #919192;
+    @extend %inter-400;
+    font-size: 16px;
+  }
+
+  &__menu-link--current {
+    color: #e9e9e9;
+  }
+
+  &__menu-img {
+    position: absolute;
+    top: 5px;
+    right: -15px;
   }
 }
 
