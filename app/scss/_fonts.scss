@@ -57,3 +57,13 @@
     url("../fonts/Oxygen-Bold.woff") format("font-woff");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("OpenSans-Regular"),
+    url("../fonts/OpenSans-Regular.woff2") format("font-woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("font-woff");
+  font-display: swap;
+}
